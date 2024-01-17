@@ -1,19 +1,13 @@
 import { useParams } from "react-router-dom";
 
-
 import PostForm from "@/components/forms/PostForm";
 import { useGetPostById } from "@/lib/react-query/queriesAndMutations";
 import Loader from "@/components/shared/Loader";
-import { ID } from "appwrite";
-
-
 
 const EditPost = () => {
   const { id } = useParams();
   const { data: post, isLoading } = useGetPostById(id || "") ?? {};
 
-
-  
   if (isLoading)
     return (
       <div className="flex-center w-full h-full">
@@ -36,7 +30,6 @@ const EditPost = () => {
         </div>
 
         {isLoading ? <Loader /> : <PostForm action="Update" post={post} />}
-        
       </div>
     </div>
   );
