@@ -1,11 +1,11 @@
-import { Models } from 'appwrite';
+
 import Loader from './Loader';
 import GridPostList from './GridPostLists';
 
 
 type SearchResultsProps = {
     isSearchFetching: boolean;
-    searchedPosts: Models.Document[];
+    searchedPosts: any;
 }
 
 const SearchResults = ({isSearchFetching, searchedPosts }: SearchResultsProps) => {
@@ -16,12 +16,13 @@ const SearchResults = ({isSearchFetching, searchedPosts }: SearchResultsProps) =
             <GridPostList posts={searchedPosts.documents} />
          )
         
-    }
+    } else {
   return (
     <div>
       <p className='text-light-4 mt-10 text-center w-full '>No Results Found</p>
     </div>
   )
+    }
 }
 
 export default SearchResults

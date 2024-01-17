@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import useDebounce from '@/hooks/useDebounce';
 import { useGetPosts, useSearchPosts } from '@/lib/react-query/queriesAndMutations';
 
-import React, { useState, useEffect } from 'react'
+import  { useState, useEffect } from 'react'
 import {useInView} from 'react-intersection-observer'
 
 const Explore = () => {
