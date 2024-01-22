@@ -1,7 +1,5 @@
-# React + TypeScript + Vite + AppWrite + React Query + TypeScript + Shadcn + TailWind CSS
-
-##PetMe App
-a small social media project for you to share pictures of your pets 
+## PetMe App
+a mini instagram clone to share photos of your pets with your friends
 
 ## Features
 -Authentication System: A robust authentication system ensuring security and user privacy
@@ -27,3 +25,11 @@ a small social media project for you to share pictures of your pets
 - Backend as a Service (BaaS) - Appwrite: Utilize Appwrite as a Backend as a Service solution for streamlined backend development, offering features like authentication, database, file storage, and more
 
 
+## TECHSTACK 
+
+React.js
+Appwrite
+React Query
+TypeScript
+Shadcn
+Tailwind CSS
