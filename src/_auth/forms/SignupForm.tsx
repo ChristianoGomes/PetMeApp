@@ -76,7 +76,7 @@ const SignupForm = () => {
           Create a new account
         </h2>
         <p className="text-light-3 small-medium md:base-regular">
-          to use SnapGram, please enter your account details
+          to use PetMe, please enter your account details
         </p>
 
         <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-5 w-full mt-4">
